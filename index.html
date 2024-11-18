@@ -1,11 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Henrisen's Portfolio">
+    <meta name="author" content="Henrisen">
     <title>Henrisen</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            max-width: 800px;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .buttons {
+            margin-top: 1rem;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 0.8rem 2rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            background-color: #fff;
+            width: 100%;
+            padding: 3rem 0;
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        section li {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- Header Section -->
+    <header>
+        <h1>Henrisen's Portfolio</h1>
+        <p>Welcome to my personal portfolio website. Explore my projects, skills, and more!</p>
+    </header>
+
+    <!-- About Me Section -->
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hello! I'm Henrisen, a passionate software developer with a love for problem-solving and building useful solutions. I specialize in web development and have experience with various programming languages and frameworks. I also enjoy contributing to open-source projects!</p>
+        <div class="buttons">
+            <a href="https://github.com/henrisen" target="_blank">View My GitHub</a>
+            <a href="mailto:henrisen@example.com">Contact Me</a>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="content">
+            <div>
+                <h3><a href="https://github.com/henrisen/project1" target="_blank">Project One</a></h3>
+                <p>A brief description of my first project, explaining its functionality and the technologies used.</p>
+                <ul>
+                    <li><strong>Languages:</strong> Python, JavaScript</li>
+                    <li><strong>Technologies:</strong> Flask, SQLAlchemy</li>
+                    <li><strong>Status:</strong> Completed</li>
+                </ul>
+            </div>
+            <div>
+                <h3><a href="https://github.com/henrisen/project2" target="_blank">Project Two</a></h3>
+                <p>A brief description of my second project, highlighting its main features and tools used.</p>
+                <ul>
+                    <li><strong>Languages:</strong> JavaScript, HTML, CSS</li>
+                    <li><strong>Technologies:</strong> React, Node.js</li>
+                    <li><strong>Status:</strong> Completed</li>
+                </ul>
+            </div>
+            <div>
+                <h3><a href="https://github.com/henrisen/project3" target="_blank">Project Three</a></h3>
+                <p>A description of the third project, its main features, and what makes it unique.</p>
+                <ul>
+                    <li><strong>Languages:</strong> Python</li>
+                    <li><strong>Technologies:</strong> Django, PostgreSQL</li>
+                    <li><strong>Status:</strong> In Progress</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Technologies & Tools</h2>
+        <div class="content">
+            <p>Here are some of the technologies and tools I'm proficient in:</p>
+            <ul>
+                <li>Python, JavaScript, HTML, CSS</li>
+                <li>Flask, Django, React, Node.js</li>
+                <li>PostgreSQL, MySQL, MongoDB</li>
+                <li>Git, Docker, Linux</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Henrisen. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
